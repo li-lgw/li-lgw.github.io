@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>移动端开发总结 | 木子李先生</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这是一篇移动端开发的总结和技巧完成了上一篇的light,才发现写博客原来真不是一件轻松的事情，但是我好像喜欢上这种总结中收获的感觉，在开这篇文章之前我在想到底写什么，想来想去还是觉得应该从基础来，正好最近的项目都是移动端，就整理下工作中遇到的移动端相关的问题，和网上搜集的移动端的问题，准备了这篇文章。">
+<meta name="keywords" content="移动端,css,html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端开发总结">
+<meta property="og:url" content="http://www.iligw.com/2017/07/18/h5Summarize/index.html">
+<meta property="og:site_name" content="木子李先生">
+<meta property="og:description" content="这是一篇移动端开发的总结和技巧完成了上一篇的light,才发现写博客原来真不是一件轻松的事情，但是我好像喜欢上这种总结中收获的感觉，在开这篇文章之前我在想到底写什么，想来想去还是觉得应该从基础来，正好最近的项目都是移动端，就整理下工作中遇到的移动端相关的问题，和网上搜集的移动端的问题，准备了这篇文章。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-04-18T13:11:14.214Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动端开发总结">
+<meta name="twitter:description" content="这是一篇移动端开发的总结和技巧完成了上一篇的light,才发现写博客原来真不是一件轻松的事情，但是我好像喜欢上这种总结中收获的感觉，在开这篇文章之前我在想到底写什么，想来想去还是觉得应该从基础来，正好最近的项目都是移动端，就整理下工作中遇到的移动端相关的问题，和网上搜集的移动端的问题，准备了这篇文章。">
+  
+    <link rel="alternate" href="/atom.xml" title="木子李先生" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="http://ot2mws3ka.bkt.clouddn.com/avatar.jpg">
+    <h2 class="author">木子李先生</h2>
+    <h3 class="description">一只前端汪</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>9</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>10</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/about" title="About">
+            <li>关于</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+          <a href="/sponsor" title="Sponsor">
+            <li>投喂</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-h5Summarize" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/18/h5Summarize/" class="article-date">
+  <time class="post-time" datetime="2017-07-18T07:48:37.000Z" itemprop="datePublished">
+    <span class="post-month">7月</span><br/>
+    <span class="post-day">18</span>
+  </time>
+</a>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      移动端开发总结
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/移动端/">移动端</a>
+  </div>
+
+          
+              
+  &nbsp; | &nbsp;
+  <div class="view-box">
+    <span id="/2017/07/18/h5Summarize/" class="leancloud_visitors" data-flag-title="移动端开发总结">
+      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
+    </span>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="这是一篇移动端开发的总结和技巧"><a href="#这是一篇移动端开发的总结和技巧" class="headerlink" title="这是一篇移动端开发的总结和技巧"></a>这是一篇移动端开发的总结和技巧</h2><p>完成了上一篇的<code>light</code>,才发现写博客原来真不是一件轻松的事情，但是我好像喜欢上这种总结中收获的感觉，在开这篇文章之前我在想到底写什么，想来想去还是觉得应该从基础来，正好最近的项目都是移动端，就整理下工作中遇到的移动端相关的问题，和网上搜集的移动端的问题，准备了这篇文章。<a id="more"></a>内容肯定不会很全面，以后工作中遇到移动端和网上看到的移动端相关问题都会总结在这里。</p>
+<hr>
+<h2 id="一、meta标签相关知识"><a href="#一、meta标签相关知识" class="headerlink" title="一、meta标签相关知识"></a>一、meta标签相关知识</h2><p>1、移动端页面设置视口宽度等于设备宽度，并禁止缩放。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2、移动端页面设置视口宽度等于定宽（如640px），并禁止缩放，常用于微信浏览器页面。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=640,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>3、禁止将页面中的数字识别为电话号码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"format-detection"</span> content=<span class="string">"telephone=no"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>4、忽略Android平台中对邮箱地址的识别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"format-detection"</span> content=<span class="string">"email=no"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>5、当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"apple-mobile-web-app-capable"</span> content=<span class="string">"yes"</span> /&gt;</span><br><span class="line">&lt;!-- ios7.0版本以后，safari上已看不到效果 --&gt;</span><br></pre></td></tr></table></figure>
+<p>6、将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"apple-mobile-web-app-status-bar-style"</span> content=<span class="string">"black"</span> /&gt;</span><br><span class="line">&lt;!-- 可选default、black、black-translucent --&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="viewport模板"><a href="#viewport模板" class="headerlink" title="viewport模板"></a>viewport模板</h3><hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">&lt;meta content=<span class="string">"width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> name=<span class="string">"viewport"</span>&gt;</span><br><span class="line">&lt;meta content=<span class="string">"yes"</span> name=<span class="string">"apple-mobile-web-app-capable"</span>&gt;</span><br><span class="line">&lt;meta content=<span class="string">"black"</span> name=<span class="string">"apple-mobile-web-app-status-bar-style"</span>&gt;</span><br><span class="line">&lt;meta content=<span class="string">"telephone=no"</span> name=<span class="string">"format-detection"</span>&gt;</span><br><span class="line">&lt;meta content=<span class="string">"email=no"</span> name=<span class="string">"format-detection"</span>&gt;</span><br><span class="line">&lt;title&gt;title&lt;/title&gt;</span><br><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"index.css"</span>&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">	content...</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="二、CSS样式技巧"><a href="#二、CSS样式技巧" class="headerlink" title="二、CSS样式技巧"></a>二、CSS样式技巧</h2><p>1、禁止ios和android用户选中文字<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.css&#123;-webkit-user-select:none&#125;</span><br></pre></td></tr></table></figure></p>
+<p>2、禁止ios长按时触发系统的菜单，禁止ios&amp;android长按时下载图片<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.css&#123;-webkit-touch-callout: none&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3、webkit去除表单元素的默认样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.css&#123;-webkit-appearance:none;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4、修改webkit表单输入框placeholder的样式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">input::-webkit-input-placeholder&#123;color:<span class="comment">#AAAAAA;&#125;</span></span><br><span class="line">input:focus::-webkit-input-placeholder&#123;color:<span class="comment">#EEEEEE;&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>5、去除android a/button/input标签被点击时产生的边框 &amp; 去除ios a标签被点击时产生的半透明灰色背景<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a,button,input&#123;-webkit-tap-highlight-color:rgba(255,0,0,0);&#125;</span><br></pre></td></tr></table></figure></p>
+<p>6、ios使用-webkit-text-size-adjust禁止调整字体大小<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">body&#123;-webkit-text-size-adjust: 100%!important;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>7、android 上去掉语音输入按钮<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">input::-webkit-input-speech-button &#123;display: none&#125;</span><br></pre></td></tr></table></figure></p>
+<p>8、移动端定义字体，移动端没有微软雅黑字体<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* 移动端定义字体的代码 */</span><br><span class="line">body&#123;font-family:Helvetica;&#125;</span><br></pre></td></tr></table></figure></p>
+<p>9、禁用Webkit内核浏览器的文字大小调整功能。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-webkit-text-size-adjust: none;</span><br></pre></td></tr></table></figure></p>
+<h2 id="三、其他技巧"><a href="#三、其他技巧" class="headerlink" title="三、其他技巧"></a>三、其他技巧</h2><hr>
+<p>1、手机拍照和上传图片<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 选择照片 --&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=file accept=<span class="string">"image/*"</span>&gt;</span><br><span class="line">&lt;!-- 选择视频 --&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=file accept=<span class="string">"video/*"</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2、取消input在ios下，输入的时候英文首字母的默认大写<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input autocapitalize=<span class="string">"off"</span> autocorrect=<span class="string">"off"</span> /&gt;</span><br></pre></td></tr></table></figure></p>
+<p>3、打电话和发短信<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=<span class="string">"tel:020-10010"</span>&gt;打电话给:020-10010&lt;/a&gt;</span><br><span class="line">&lt;a href=<span class="string">"sms:10010"</span>&gt;发短信给: 10010&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="四、CSS-reset"><a href="#四、CSS-reset" class="headerlink" title="四、CSS reset"></a>四、CSS reset</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">/* lgw  */</span><br><span class="line">@charset <span class="string">"utf-8"</span>;</span><br><span class="line">/* reset */</span><br><span class="line">html&#123;</span><br><span class="line">	-webkit-text-size-adjust:none;</span><br><span class="line">	-webkit-user-select:none;</span><br><span class="line">	-webkit-touch-callout: none</span><br><span class="line">	font-family: Helvetica;</span><br><span class="line">&#125;</span><br><span class="line">body&#123;font-size:12px;&#125;</span><br><span class="line">body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select&#123;margin:0; padding:0; font-weight: normal;text-indent: 0;&#125;</span><br><span class="line">a,button,input,textarea,select&#123; background: none; -webkit-tap-highlight-color:rgba(255,0,0,0); outline:none; -webkit-appearance:none;&#125;</span><br><span class="line">em&#123;font-style:normal&#125;</span><br><span class="line">li&#123;list-style:none&#125;</span><br><span class="line">a&#123;text-decoration:none;&#125;</span><br><span class="line">img&#123;border:none; vertical-align:top;&#125;</span><br><span class="line">table&#123;border-collapse:collapse;&#125;</span><br><span class="line">textarea&#123; resize:none; overflow:auto;&#125;</span><br><span class="line">/* end reset */</span><br></pre></td></tr></table></figure>
+<h2 id="五、常用公共CSS-style"><a href="#五、常用公共CSS-style" class="headerlink" title="五、常用公共CSS style"></a>五、常用公共CSS style</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">/* public */</span><br><span class="line"></span><br><span class="line">/* 清除浮动 */</span><br><span class="line">.clear &#123; zoom:1; &#125;</span><br><span class="line">.clear:after &#123; content:<span class="string">''</span>; display:block; clear:both; &#125;</span><br><span class="line"></span><br><span class="line">/* 定义盒模型为怪异和模型（宽高不受边框影响） */</span><br><span class="line">.boxSiz&#123;</span><br><span class="line">	-webkit-box-sizing: border-box;</span><br><span class="line">	-moz-box-sizing: border-box;</span><br><span class="line">	-ms-box-sizing: border-box;</span><br><span class="line">	-o-box-sizing: border-box;</span><br><span class="line">	box-sizing: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 强制换行 */</span><br><span class="line">.toWrap&#123;</span><br><span class="line">	word-break: <span class="built_in">break</span>-all;       /* 只对英文起作用，以字母作为换行依据。 */</span><br><span class="line">	word-wrap: <span class="built_in">break</span>-word;   	/* 只对英文起作用，以单词作为换行依据。*/</span><br><span class="line">	white-space: pre-wrap;     /* 只对中文起作用，强制换行。*/</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 禁止换行 */</span><br><span class="line">.noWrap&#123;</span><br><span class="line">	white-space:nowrap;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 禁止换行,超出省略号 */</span><br><span class="line">.noWrapEllipsis&#123;</span><br><span class="line">	 white-space:nowrap; overflow:hidden; text-overflow:ellipsis;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 多行显示省略号，less写法，@line是行数 */</span><br><span class="line">.ellipsisLn(@line) &#123;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">    text-overflow: ellipsis;</span><br><span class="line">    display: -webkit-box;</span><br><span class="line">    -webkit-box-orient: vertical;</span><br><span class="line">    -webkit-line-clamp: @line;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 1px 边框解决方案，示例中设置上边框，可以调整 top、right、bottom、left 的值分别设置上下左右边框 */</span><br><span class="line"><span class="comment">#box2:after&#123;</span></span><br><span class="line">	content: <span class="string">" "</span>;</span><br><span class="line">    position: absolute;</span><br><span class="line">    left: 0;</span><br><span class="line">    top: 0;</span><br><span class="line">    right: 0;</span><br><span class="line">    height: 1px;</span><br><span class="line">    border-top: 1px solid <span class="comment">#000;</span></span><br><span class="line">    color: <span class="comment">#C7C7C7;</span></span><br><span class="line">    transform-origin: 0 0;</span><br><span class="line">    transform: scaleY(0.5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 文字两端对齐 */</span><br><span class="line">.text-justify&#123;</span><br><span class="line">	text-align:justify;</span><br><span class="line">	text-justify:inter-ideograph;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 定义盒模型为 flex布局兼容写法并让内容水平垂直居中 */</span><br><span class="line">.flex-center&#123;</span><br><span class="line">	display: -webkit-box;</span><br><span class="line">	display: -moz-box;</span><br><span class="line">	display: -ms-flexbox;</span><br><span class="line">	display: -o-box;</span><br><span class="line">	display: box;</span><br><span class="line">	-webkit-box-pack: center;</span><br><span class="line">    -moz-box-pack: center;</span><br><span class="line">    -ms-flex-pack: center;</span><br><span class="line">    -o-box-pack: center;</span><br><span class="line">    box-pack: center;</span><br><span class="line">    -webkit-box-align: center;</span><br><span class="line">    -moz-box-align: center;</span><br><span class="line">    -ms-flex-align: center;</span><br><span class="line">    -o-box-align: center;</span><br><span class="line">    box-align: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* public end */</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.iligw.com/2017/07/18/h5Summarize/" data-id="cji3bqo270002r9i6wdmdw0jz" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/">html</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/15/杭州出差记/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          杭州出差记
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/10/light/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">快速开发之Light</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+
+    <div id="comments" class="comments">
+        <div id="uyan_frame"></div>
+    </div>
+ <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139720"></script>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">木子李先生</h1>
+    <h2 class="blog-subtitle">认真的人才有资格开玩笑</h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/about" title="About">
+            <li>关于</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+          <a href="/sponsor" title="Sponsor">
+            <li>投喂</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="http://ot2mws3ka.bkt.clouddn.com/avatar.jpg">
+    <h2 class="author">木子李先生</h2>
+    <h3 class="description">一只前端汪</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>9</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>10</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://git.oschina.net/li_lgw" target="_blank" title="Github(码云)">
+          Github(码云)
+        </a>
+      
+        <a class="hvr-bounce-in" href="https://github.com/li-lgw" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://iligw.com/" target="_blank" title="木子李">
+          木子李
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2017 - 2018 木子李先生<br>
+      
+        <script src="http://s11.cnzz.com/z_stat.php?id=1262956055&web_id=1262956055" language="JavaScript"></script>
+      
+    </div>
+    <div class="to_top" id="toTop" style="display:none;"></div>
+  </div>
+</footer>
+
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/about" title="" class="menuItem">关于</a>
+          
+            <a href="/sponsor" title="" class="menuItem">投喂</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("vdkxMjWPhg18XCqVYsTkiyAt-gzGzoHsz", "OvqEKa5XaboRUBP35WqUX4B7");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.article-title').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>读JavaScript设计模式与开发实践 | 木子李先生</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前言作为一名奋斗在前线的程序猿，你要做的就是不能停止学习，前几天子看到一个有趣的评论，node之父发布新的开源项目Deno,GitHub上面评论说别再更新了，已经没有力气去学了，当你停下来享受的时候，注定会被淘汰，技术更新太快了，今天突然">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读JavaScript设计模式与开发实践">
+<meta property="og:url" content="http://www.iligw.com/2018/06/06/读JavaScript设计模式与开发实践/index.html">
+<meta property="og:site_name" content="木子李先生">
+<meta property="og:description" content="前言作为一名奋斗在前线的程序猿，你要做的就是不能停止学习，前几天子看到一个有趣的评论，node之父发布新的开源项目Deno,GitHub上面评论说别再更新了，已经没有力气去学了，当你停下来享受的时候，注定会被淘汰，技术更新太快了，今天突然">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-06T16:20:15.034Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="读JavaScript设计模式与开发实践">
+<meta name="twitter:description" content="前言作为一名奋斗在前线的程序猿，你要做的就是不能停止学习，前几天子看到一个有趣的评论，node之父发布新的开源项目Deno,GitHub上面评论说别再更新了，已经没有力气去学了，当你停下来享受的时候，注定会被淘汰，技术更新太快了，今天突然">
+  
+    <link rel="alternate" href="/atom.xml" title="木子李先生" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="http://ot2mws3ka.bkt.clouddn.com/avatar.jpg">
+    <h2 class="author">木子李先生</h2>
+    <h3 class="description">一只前端汪</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>9</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>10</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/about" title="About">
+            <li>关于</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+          <a href="/sponsor" title="Sponsor">
+            <li>投喂</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-读JavaScript设计模式与开发实践" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/06/读JavaScript设计模式与开发实践/" class="article-date">
+  <time class="post-time" datetime="2018-06-06T15:29:59.000Z" itemprop="datePublished">
+    <span class="post-month">6月</span><br/>
+    <span class="post-day">06</span>
+  </time>
+</a>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      读JavaScript设计模式与开发实践
+    </h1>
+  
+
+        <div>
+          
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>,<a class="article-category-link" href="/categories/JavaScript/积累/">积累</a>,<a class="article-category-link" href="/categories/JavaScript/积累/读书/">读书</a>
+  </div>
+
+          
+              
+  &nbsp; | &nbsp;
+  <div class="view-box">
+    <span id="/2018/06/06/读JavaScript设计模式与开发实践/" class="leancloud_visitors" data-flag-title="读JavaScript设计模式与开发实践">
+      &nbsp;阅读次数<span class="leancloud-visitors-count"></span>
+    </span>
+  </div>
+
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>作为一名奋斗在前线的程序猿，你要做的就是不能停止学习，前几天子看到一个有趣的评论，<code>node</code>之父发布新的开源项目<code>Deno</code>,<code>GitHub</code>上面评论说别再更新了，已经没有力气去学了，当你停下来享受的时候，注定会被淘汰，技术更新太快了，今天突然<a id="more"></a>睡不着朋友前几天推荐了一本书设计模式与开发实践，初略的浏览了一下目录，这是一本适合入坑、有过项目经验的猿看的一本书，我会时不时的把看到的精华记录下来，共同进步，原谅我文采不好…</p>
+<h2 id="代码片段"><a href="#代码片段" class="headerlink" title="代码片段"></a>代码片段</h2><p>我想没有什么比直接写代码更直观的了，或许是我能力不够，翻看了几页之后就着迷了，看到书上的代码真的很优雅、严谨，看这种代码或许就是别人说的享受，今天记录一段<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var Type=&#123;&#125;;</span><br><span class="line"><span class="keyword">for</span>(var i = 0, <span class="built_in">type</span>; <span class="built_in">type</span> = [<span class="string">'String'</span>,<span class="string">'Array'</span>,<span class="string">'Number'</span>][i++];) &#123;</span><br><span class="line">	(<span class="keyword">function</span>(<span class="built_in">type</span>)&#123;</span><br><span class="line">		Type[<span class="string">'is'</span> + <span class="built_in">type</span>] = <span class="keyword">function</span>(obj) &#123;</span><br><span class="line">			<span class="built_in">return</span> Object.prototype.toString.call(obj) === <span class="string">'[object '</span>+<span class="built_in">type</span>+<span class="string">']'</span>;</span><br><span class="line">		&#125;;</span><br><span class="line">	&#125;)(<span class="built_in">type</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(Type.isArray([]));//输出 <span class="literal">true</span></span><br><span class="line">console.log(Type.isString(<span class="string">"string"</span>)); //输出<span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.iligw.com/2018/06/06/读JavaScript设计模式与开发实践/" data-id="cji3bqo33000fr9i6eui8jm7g" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/06/util/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">打造自己的JavaScript库</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+
+    <div id="comments" class="comments">
+        <div id="uyan_frame"></div>
+    </div>
+ <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2139720"></script>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">木子李先生</h1>
+    <h2 class="blog-subtitle">认真的人才有资格开玩笑</h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/about" title="About">
+            <li>关于</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+          <a href="/sponsor" title="Sponsor">
+            <li>投喂</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="http://ot2mws3ka.bkt.clouddn.com/avatar.jpg">
+    <h2 class="author">木子李先生</h2>
+    <h3 class="description">一只前端汪</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>7</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>9</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>10</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://git.oschina.net/li_lgw" target="_blank" title="Github(码云)">
+          Github(码云)
+        </a>
+      
+        <a class="hvr-bounce-in" href="https://github.com/li-lgw" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://iligw.com/" target="_blank" title="木子李">
+          木子李
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2017 - 2018 木子李先生<br>
+      
+        <script src="http://s11.cnzz.com/z_stat.php?id=1262956055&web_id=1262956055" language="JavaScript"></script>
+      
+    </div>
+    <div class="to_top" id="toTop" style="display:none;"></div>
+  </div>
+</footer>
+
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/about" title="" class="menuItem">关于</a>
+          
+            <a href="/sponsor" title="" class="menuItem">投喂</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("vdkxMjWPhg18XCqVYsTkiyAt-gzGzoHsz", "OvqEKa5XaboRUBP35WqUX4B7");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.article-title').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+
+  </div>
+</body>
+</html>
